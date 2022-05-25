@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --cyan-2: hsl(179, 63%, 61%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+body {
+    font-size: 16px;
+    background-color: var(--light-gray);
+}
+p {
+    color: var(--grayish-blue);
+}
+
+.card {
+    margin-top: 4rem;
+    width: max(600px );
+    margin-inline: auto;
+    background-color: white;
+
+}
+.padding {
+    padding: 1.5rem;
+}
+.card h2 {
+    color: cyan;
+}
+.padding > h3 {
+    color: var(--bright-yellow);
+}
+.price {
+    background-color: var(--cyan);
+}
+.price *, .why-us * {
+    color: var(--light-gray);
+}
+.why-us {
+    background-color: var(--cyan-2);
+
+}
+.price, .why-us {
+    padding: 2rem;
+}
+.blue  {
+    color: var(--light-gray);
+}
+.flex {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+.sign-up {
+    width: 14rem;
+    height: 2rem  ;
+    border: none;
+    background-color: var(--bright-yellow);
+}
+ .price p, .sign-up, .why-us p, .padding h3, .padding p {
+    margin-top: 1rem;
+}
+.price span {
+    font-size: 30px;
+    font-weight: 700;
+}
+.why-us p {
+    width: 70%;
+}
+@media (max-width:375px) {
+    .flex {
+        display: block;
+    }
+    .card {
+        width: 330px;
+    }
+}
